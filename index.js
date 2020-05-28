@@ -1,5 +1,7 @@
 const name = document.getElementById('text');
 
+Permissions.requestAll();
+
 name.innerText = 1;
 
 navigator.permissions.query({name:'geolocation'}).then(function(result) {
